@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 class DeleteBook extends Component {
     constructor(props) {
         super(props);
-        this.state = { bookDelete: this.props.books[0] }
+        this.state = { bookDelete: {} }
     }
 
     //skulle sgu bare have sendt id videre op... men det virker...
@@ -11,12 +11,10 @@ class DeleteBook extends Component {
         if (this.state.bookDelete) {
             this.props.deleteBook(this.state.bookDelete);
         }
-        console.log(this.state.bookDelete);
     }
 
     handleChange = e => {
         let book = this.findBookInProps(e.target.value);
-        console.log(book.author);
         if (book) {
             this.setState({
                 bookDelete: {
@@ -36,9 +34,7 @@ class DeleteBook extends Component {
 
     findBookInProps = id => {
         for (let book of this.props.books) {
-            console.log("bøgerne findes here" + book.id);
             if (book.id === parseInt(id, 0)) {
-                console.log(book.author);
                 return book;
             }
         }
@@ -57,6 +53,5 @@ class DeleteBook extends Component {
             </div>
         );
     }
-
 }
 export default DeleteBook;
