@@ -20,14 +20,17 @@ export default class BookInfo extends Component {
 
     render() {
         return (
-            <table className="table">
-                <thead>
-                    {this.bookLabels()}
-                </thead>
-                <tbody>
-                    {this.bookRow()}
-                </tbody>
-            </table>
+            <div>
+                <h3>Found Book:</h3>
+                <table className="table">
+                    <thead>
+                        {this.bookLabels()}
+                    </thead>
+                    <tbody>
+                        {this.bookRow()}
+                    </tbody>
+                </table>
+            </div>
         )
     }
 

@@ -3,6 +3,7 @@ import BookStore from '../data/BookStore';
 import BooksTable from './BooksTable';
 import BookInfo from './BookInfo';
 import AddBook from './AddBook';
+import DeleteBook from './DeleteBook';
 
 class Books extends Component {
     constructor(props) {
@@ -46,18 +47,22 @@ class Books extends Component {
         this.bStore.getAllBooks(this.booksUpdater);
     }
 
+    handleDeleteBook = deleteBook => {
+        this.bStore.deleteBook(deleteBook);
+        this.bStore.getAllBooks(this.booksUpdater);
+    }
+
     render() {
         return (
             <div className="books">
+                <DeleteBook books={this.state.books} deleteBook={this.handleDeleteBook} />
                 <AddBook addBook={this.handleAddBook} />
                 <hr />
                 <h3>Find book with id</h3>
                 {this.findBook()}
                 <hr />
-                <h3>Found Book:</h3>
                 <BookInfo book={this.state.book} />
                 <hr />
-                <h3>All Books:</h3>
                 <BooksTable books={this.state.books} />
             </div>
         );

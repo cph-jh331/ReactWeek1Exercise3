@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 class BooksTable extends Component {
-    
+
     bookLabels = () =>
         <tr>
             <th>ID</th>
@@ -23,14 +23,17 @@ class BooksTable extends Component {
 
     render() {
         return (
-            <table className="table">
-                <thead>
-                    {this.bookLabels()}
-                </thead>
-                <tbody>
-                    {this.bookList()}
-                </tbody>
-            </table>
+            <div>
+                <h3>All Books:</h3>
+                <table className="table">
+                    <thead>
+                        {this.bookLabels()}
+                    </thead>
+                    <tbody>
+                        {this.bookList()}
+                    </tbody>
+                </table>
+            </div>
         );
     }
 }
