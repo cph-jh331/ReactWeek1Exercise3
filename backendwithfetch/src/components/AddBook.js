@@ -9,18 +9,23 @@ class AddBook extends Component {
 
     handleSubmit = e => {
         e.preventDefault();
-        if (this.refs.title.value === "" || this.refs.author.value === "" || this.refs.rating === "" || this.refs.published === "") {
-            alert("enter proper values");
-        } else {
-            this.setState({
-                newBook: {
-                    title: this.refs.title.value,
-                    author: this.refs.author.value,
-                    rating: this.refs.rating.value,
-                    year_published: this.refs.published.value
-                }
-            }, () => { this.props.addBook(this.state.newBook); }
+        if (this.refs.title.value !== "" && this.refs.author.value !== "" && this.refs.rating !== "" && this.refs.published !== "") {
+            this.setState(
+                {
+                    newBook: {
+                        title: this.refs.title.value,
+                        author: this.refs.author.value,
+                        rating: this.refs.rating.value,
+                        year_published: this.refs.published.value
+                    }
+                }, () => { this.props.addBook(this.state.newBook); }
             );
+            this.refs.title.value = "";
+            this.refs.author.value = "";
+            this.refs.rating.value = "";
+            this.refs.published.value = "";
+        } else {
+            alert("enter proper values");
         }
 
     }

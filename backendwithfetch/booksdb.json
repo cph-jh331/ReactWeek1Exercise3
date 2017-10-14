@@ -106,18 +106,11 @@
       "year_published": 1947
     },
     {
-      "title": "Bob",
-      "author": "Bob Hansen",
-      "rating": "2.3",
-      "year_published": "1984",
+      "title": "Fiskens Eventyr",
+      "author": "Jens Sømand",
+      "rating": "8.3",
+      "year_published": "1898",
       "id": 116
-    },
-    {
-      "title": "Den Gale Fynbo",
-      "author": "Frans Ferdinan",
-      "rating": "8.5",
-      "year_published": "1855",
-      "id": 117
     }
   ]
 }

@@ -21,10 +21,12 @@ class Books extends Component {
 
     booksUpdater = data => {
         this.setState({ books: data });
+        console.log(this.state.books);
     }
 
     bookUpdater = data => {
         this.setState({ book: data });
+        console.log(this.state.book);
     }
 
     handleChange = e => {
@@ -43,10 +45,8 @@ class Books extends Component {
         this.bStore.addBook(newBook);
         this.bStore.getAllBooks(this.booksUpdater);
     }
-    
+
     render() {
-        console.log(this.state.books);
-        console.log(this.state.book);
         return (
             <div className="books">
                 <AddBook addBook={this.handleAddBook} />
