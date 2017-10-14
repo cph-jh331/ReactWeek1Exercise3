@@ -30,7 +30,7 @@ class DeleteBook extends Component {
         } else {
             this.setState({
                 deleteBook: {}
-            })
+            });
         }
     }
 
@@ -44,9 +44,6 @@ class DeleteBook extends Component {
         }
         return {};
     }
-
-
-
 
     render() {
         return (
