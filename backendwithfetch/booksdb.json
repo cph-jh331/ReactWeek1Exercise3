@@ -1,109 +1,123 @@
 {
-    "books": [
-        {
-            "id": 101,
-            "title": "nemo dicta qui rerum non est",
-            "author": "Mercedes Trantow",
-            "rating": 3.85,
-            "year_published": 1980
-        },
-        {
-            "id": 102,
-            "title": "reprehenderit maiores unde soluta quae",
-            "author": "Wilfred Streich",
-            "rating": 3.1,
-            "year_published": 1867
-        },
-        {
-            "id": 103,
-            "title": "voluptatem sit fugit eaque vel",
-            "author": "Martina Weissnat",
-            "rating": 0.35,
-            "year_published": 1751
-        },
-        {
-            "id": 104,
-            "title": "ea",
-            "author": "Rhianna Anderson",
-            "rating": 4.4,
-            "year_published": 1720
-        },
-        {
-            "id": 105,
-            "title": "voluptates assumenda animi vero",
-            "author": "Shaylee Kuhic",
-            "rating": 3.35,
-            "year_published": 1822
-        },
-        {
-            "id": 106,
-            "title": "laborum suscipit",
-            "author": "Jean Gorczany",
-            "rating": 4.35,
-            "year_published": 1775
-        },
-        {
-            "id": 107,
-            "title": "totam cumque",
-            "author": "Morris Farrell",
-            "rating": 3.8,
-            "year_published": 1777
-        },
-        {
-            "id": 108,
-            "title": "quia voluptatibus est corrupti tempora",
-            "author": "Elliott Purdy",
-            "rating": 2.55,
-            "year_published": 1767
-        },
-        {
-            "id": 109,
-            "title": "beatae maxime asperiores voluptas",
-            "author": "Tia Becker",
-            "rating": 3.85,
-            "year_published": 1903
-        },
-        {
-            "id": 110,
-            "title": "excepturi aliquam",
-            "author": "Roy Davis",
-            "rating": 2.2,
-            "year_published": 2009
-        },
-        {
-            "id": 111,
-            "title": "rerum corrupti fugiat",
-            "author": "Kianna Casper",
-            "rating": 2.2,
-            "year_published": 1848
-        },
-        {
-            "id": 112,
-            "title": "adipisci et voluptas ipsam rerum",
-            "author": "Theo Eichmann",
-            "rating": 4.65,
-            "year_published": 1887
-        },
-        {
-            "id": 113,
-            "title": "odit",
-            "author": "Pearl Kuhic",
-            "rating": 3.95,
-            "year_published": 1853
-        },
-        {
-            "id": 114,
-            "title": "dolores itaque amet",
-            "author": "Shanie Funk",
-            "rating": 2.4,
-            "year_published": 1781
-        },
-        {
-            "id": 115,
-            "title": "inventore enim",
-            "author": "Bettie Ryan",
-            "rating": 1.35,
-            "year_published": 1947
-        }
-    ]
+  "books": [
+    {
+      "id": 101,
+      "title": "nemo dicta qui rerum non est",
+      "author": "Mercedes Trantow",
+      "rating": 3.85,
+      "year_published": 1980
+    },
+    {
+      "id": 102,
+      "title": "reprehenderit maiores unde soluta quae",
+      "author": "Wilfred Streich",
+      "rating": 3.1,
+      "year_published": 1867
+    },
+    {
+      "id": 103,
+      "title": "voluptatem sit fugit eaque vel",
+      "author": "Martina Weissnat",
+      "rating": 0.35,
+      "year_published": 1751
+    },
+    {
+      "id": 104,
+      "title": "ea",
+      "author": "Rhianna Anderson",
+      "rating": 4.4,
+      "year_published": 1720
+    },
+    {
+      "id": 105,
+      "title": "voluptates assumenda animi vero",
+      "author": "Shaylee Kuhic",
+      "rating": 3.35,
+      "year_published": 1822
+    },
+    {
+      "id": 106,
+      "title": "laborum suscipit",
+      "author": "Jean Gorczany",
+      "rating": 4.35,
+      "year_published": 1775
+    },
+    {
+      "id": 107,
+      "title": "totam cumque",
+      "author": "Morris Farrell",
+      "rating": 3.8,
+      "year_published": 1777
+    },
+    {
+      "id": 108,
+      "title": "quia voluptatibus est corrupti tempora",
+      "author": "Elliott Purdy",
+      "rating": 2.55,
+      "year_published": 1767
+    },
+    {
+      "id": 109,
+      "title": "beatae maxime asperiores voluptas",
+      "author": "Tia Becker",
+      "rating": 3.85,
+      "year_published": 1903
+    },
+    {
+      "id": 110,
+      "title": "excepturi aliquam",
+      "author": "Roy Davis",
+      "rating": 2.2,
+      "year_published": 2009
+    },
+    {
+      "id": 111,
+      "title": "rerum corrupti fugiat",
+      "author": "Kianna Casper",
+      "rating": 2.2,
+      "year_published": 1848
+    },
+    {
+      "id": 112,
+      "title": "adipisci et voluptas ipsam rerum",
+      "author": "Theo Eichmann",
+      "rating": 4.65,
+      "year_published": 1887
+    },
+    {
+      "id": 113,
+      "title": "odit",
+      "author": "Pearl Kuhic",
+      "rating": 3.95,
+      "year_published": 1853
+    },
+    {
+      "id": 114,
+      "title": "dolores itaque amet",
+      "author": "Shanie Funk",
+      "rating": 2.4,
+      "year_published": 1781
+    },
+    {
+      "id": 115,
+      "title": "inventore enim",
+      "author": "Bettie Ryan",
+      "rating": 1.35,
+      "year_published": 1947
+    },
+    {
+      "title": "Bob",
+      "author": "Bob Hansen",
+      "rating": "2.3",
+      "year_published": "1984",
+      "id": 116
+    },
+    {
+      "title": "Den Gale Fynbo",
+      "author": "Frans Ferdinan",
+      "rating": "8.5",
+      "year_published": "1855",
+      "id": 117
+    }
+  ]
 }

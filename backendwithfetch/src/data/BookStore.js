@@ -27,6 +27,20 @@ class BookStore {
                 }
             });
     }
+
+    addBook = (book, cb) => {
+        fetch(URL, {
+            method: "POST",
+            headers: myHeader,
+            body: JSON.stringify(book)
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (cb) {
+                    cb(data);
+                }
+            });
+    }
 }
 
 export default BookStore;
