@@ -4,6 +4,7 @@ import BooksTable from './BooksTable';
 import BookInfo from './BookInfo';
 import AddBook from './AddBook';
 import DeleteBook from './DeleteBook';
+import EditBook from './EditBook';
 
 class Books extends Component {
     constructor(props) {
@@ -52,10 +53,18 @@ class Books extends Component {
         this.bStore.getAllBooks(this.booksUpdater);
     }
 
+    handleEditBook = editedBook => {
+        this.bStore.editBook(editedBook);
+        this.bStore.getAllBooks(this.booksUpdater);
+    }
+
     render() {
         return (
             <div className="books">
+                <EditBook books={this.state.books} editBook={this.handleEditBook} />
+                <hr />
                 <DeleteBook books={this.state.books} deleteBook={this.handleDeleteBook} />
+                <hr />
                 <AddBook addBook={this.handleAddBook} />
                 <hr />
                 <h3>Find book with id</h3>

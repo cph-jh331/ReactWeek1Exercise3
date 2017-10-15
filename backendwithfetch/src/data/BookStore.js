@@ -46,6 +46,7 @@ class BookStore {
     }
 
     editBook = (book, cb) => {
+        console.log(book.id);
         fetch(URL + book.id,
             {
                 method: "PUT",

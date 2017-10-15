@@ -2,7 +2,7 @@
   "books": [
     {
       "id": 101,
-      "title": "nemo dicta qui rerum non est",
+      "title": "Hvad Fanden",
       "author": "Mercedes Trantow",
       "rating": 3.85,
       "year_published": 1980
@@ -83,6 +83,27 @@
       "author": "Shanie Funk",
       "rating": 2.4,
       "year_published": 1781
+    },
+    {
+      "id": 115,
+      "title": "Den Gale Fynbo",
+      "author": "Jens Jydebo",
+      "rating": 9.4,
+      "year_published": 2002
+    },
+    {
+      "title": "Gyldne Tider",
+      "author": "Knud Knudsen",
+      "rating": 4.3,
+      "year_published": 1999,
+      "id": 116
+    },
+    {
+      "title": "Den Fulde Svensker",
+      "author": "Jan Guillou",
+      "rating": 3.4,
+      "year_published": 2011,
+      "id": 117
     }
   ]
 }

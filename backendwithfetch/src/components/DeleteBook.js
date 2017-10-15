@@ -8,14 +8,18 @@ class DeleteBook extends Component {
     //skulle sgu bare have sendt id videre op... men det virker...
     handleSubmit = e => {
         e.preventDefault();
-        if (this.state.bookDelete) {
+        if (this.state.bookDelete.id) {
             this.props.deleteBook(this.state.bookDelete);
+            alert("book with id " + this.state.bookDelete.id + " deleted." );            
+            this.setState({ bookDelete: {} })
+        } else {
+            alert("book not found");
         }
     }
 
     handleChange = e => {
         let book = this.findBookInProps(e.target.value);
-        if (book) {
+        if (book !== null) {
             this.setState({
                 bookDelete: {
                     id: book.id,
@@ -38,13 +42,13 @@ class DeleteBook extends Component {
                 return book;
             }
         }
-        return {};
+        return null;
     }
 
     render() {
         return (
             <div>
-                <h3>Delete A Book:</h3>
+                <h3>Delete Book:</h3>
                 <form className="form-inline" onSubmit={this.handleSubmit}>
                     <label>Book id:</label>
                     <input type="number" className="form-control" onChange={this.handleChange} />

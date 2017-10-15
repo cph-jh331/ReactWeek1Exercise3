@@ -15,8 +15,8 @@ class AddBook extends Component {
                     newBook: {
                         title: this.refs.title.value,
                         author: this.refs.author.value,
-                        rating: this.refs.rating.value,
-                        year_published: this.refs.published.value
+                        rating: parseFloat(this.refs.rating.value,0),
+                        year_published: parseInt(this.refs.published.value,0)
                     }
                 }, () => { this.props.addBook(this.state.newBook); }
             );
@@ -42,7 +42,7 @@ class AddBook extends Component {
                     <label>Rating: </label>
                     <input type="number" className="form-control" step="any" ref="rating" />
                     <label>Year published: </label>
-                    <input type="number" className="form-control" step="any" ref="published" />
+                    <input type="number" className="form-control" ref="published" />
                     <input type="submit" className="form-control" value="submit" />
                 </form>
             </div>
