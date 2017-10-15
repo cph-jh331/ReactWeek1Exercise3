@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import BookStore from '../data/BookStore';
 import BooksTable from './BooksTable';
-import BookInfo from './BookInfo';
 import AddBook from './AddBook';
 import DeleteBook from './DeleteBook';
 import EditBook from './EditBook';
@@ -35,14 +34,6 @@ class Books extends Component {
         this.bStore.getBook(e.target.value, this.bookUpdater);
     }
 
-    findBook = () =>
-        <form className="form-inline">
-            <div className="form-group">
-                <label> Id of book </label>
-                <input className="form-control" type="number" onChange={this.handleChange} placeholder="101" />
-            </div>
-        </form>
-
     handleAddBook = newBook => {
         this.bStore.addBook(newBook);
         this.bStore.getAllBooks(this.booksUpdater);
@@ -66,11 +57,6 @@ class Books extends Component {
                 <DeleteBook books={this.state.books} deleteBook={this.handleDeleteBook} />
                 <hr />
                 <AddBook addBook={this.handleAddBook} />
-                <hr />
-                <h3>Find book with id</h3>
-                {this.findBook()}
-                <hr />
-                <BookInfo book={this.state.book} />
                 <hr />
                 <BooksTable books={this.state.books} />
             </div>
